@@ -11,7 +11,7 @@ namespace UserManager.DAL
         public UserManagerContext(DbContextOptions<UserManagerContext> option): base(option)
         {
             Database.EnsureCreated();
-            Database.Migrate();
+            //Database.Migrate();
         }
 
         public DbSet<User> Users { get; set; }

@@ -1,7 +1,7 @@
 ﻿using System.Xml.Serialization;
 using UserManager.DAL.Models;
 
-namespace UserManager.Models.Response
+namespace UserManager.WebClient.Models.Response
 {
     [XmlRoot("Response")]
     public class Response

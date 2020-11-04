@@ -1,4 +1,4 @@
-﻿namespace UserManager.Models.Response
+﻿namespace UserManager.WebClient.Models.Response
 {
     public class ErrorResponse
     {

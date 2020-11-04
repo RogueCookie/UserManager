@@ -16,7 +16,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using UserManager.DAL;
-using UserManager.Models.Response;
+using UserManager.WebClient.Models.Response;
+using UserManager.WebClient.Services;
 
 namespace UserManager
 {
@@ -35,6 +36,8 @@ namespace UserManager
             services.AddControllersWithViews();
             services.AddDbContext<UserManagerContext>(opt => opt.UseSqlite("FileName=Db.db3")
                 .UseSnakeCaseNamingConvention());
+
+            services.AddScoped<UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

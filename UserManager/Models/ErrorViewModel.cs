@@ -1,6 +1,4 @@
-using System;
-
-namespace UserManager.Models
+namespace UserManager.WebClient.Models
 {
     public class ErrorViewModel
     {
